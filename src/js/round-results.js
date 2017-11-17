@@ -16,6 +16,9 @@ function updateResults (e) {
     roundResults[player].scores = Array.from(table.querySelectorAll('[name^="' + player + '_hole-"]')).map(( element) => +element.value);
 
     table.querySelector('#' +player + '_total-round').innerText = roundResults[player].getTotalScore();
+    table.querySelector('#' +player + '_total-front').innerText = roundResults[player].getFrontScore();
+    table.querySelector('#' +player + '_total-back').innerText = roundResults[player].getBackScore();
+    table.querySelector('#' +player + '_over-under').innerText = roundResults[player].getOverUnder();
 }
 
 function wireEvents() {
