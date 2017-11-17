@@ -1,0 +1,17 @@
+{
+  "name": "disc-golf-statistics",
+  "version": "0.1.0",
+  "description": "Simple web page to calculate stats for a round of disc golf.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Van Wagenen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "materialize-css": "^0.100.2",
+    "serve-favicon": "^2.4.5"
+  }
+}
