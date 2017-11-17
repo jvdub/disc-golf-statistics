@@ -21,7 +21,7 @@ export class DiscGolfRound {
     }
 
     get par() {
-        return this._scores;
+        return this._par;
     }
 
     set par(par) {
