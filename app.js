@@ -1,8 +1,11 @@
+const http2 = require('http2');
+const compression = require('compression');
 const express = require('express');
 const app = express();
 const path = require('path');
 const favicon = require('serve-favicon');
 
+app.use(compression());
 app.use(favicon(__dirname + '/favicon.ico'));
 app.use('/material', express.static(__dirname + '/node_modules/materialize-css/dist/'));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));

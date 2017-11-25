@@ -10,7 +10,9 @@
   "author": "John Van Wagenen",
   "license": "MIT",
   "dependencies": {
+    "compression": "^1.7.1",
     "express": "^4.16.2",
+    "http2": "^3.3.7",
     "materialize-css": "^0.100.2",
     "serve-favicon": "^2.4.5"
   }
